@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>articulate</title>
+
+        <style>
+            @font-face {
+                font-family: "Comic Sans";
+                src: url('comic-sans.ttf');
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 10px;
+                box-sizing: border-box;
+                text-align: center;
+                font-family: "Comic Sans";
+                background: black;
+                color: brown;
+                text-shadow: -1px 1px 2px #03c203b5;
+                font-size: 24px;
+            }
+        </style>
+
+        <script>
+            var audio = new Audio('campfire.mp3');
+            audio.loop = true
+            var audioPlaying = false
+            window.onclick = function () {
+                audioPlaying = !audioPlaying
+                if (audioPlaying) {
+                    audio.play()
+                } else {
+                    audio.pause()
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>end of season fire</p>
+        <img src="https://media.giphy.com/media/MAFldENZFnV6M/giphy.gif" frameBorder="0" class="giphy-embed" allowFullScreen></img>
+        <p>burn away your sins<br>be reborn in the ashes</p>
+        <p>87 st marks pl apt 2b<br>Thursday 09:00 pm</p>
+    </body>
+</html>
