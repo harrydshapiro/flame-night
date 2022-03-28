@@ -23,8 +23,8 @@ jobs:
       run: aws s3 sync ./public/ s3://flame-night.city --delete
 
 
-    # - name: Deploy static site to www S3 bucket
-    #   run: aws s3 sync ./public/ s3://www.flame-night.city --delete
+    - name: Deploy static site to www S3 bucket
+      run: aws s3 sync ./public/ s3://www.flame-night.city --delete
 
     # - name: Deploy static site to catharsis S3 bucket
     #   run: aws s3 sync ./public/ s3://catharsis.flame-night.city --delete
